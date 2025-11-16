@@ -169,7 +169,15 @@ const createPlayer = (btnList: { [name: string]: any }) => {
   const addPlayer = (voice: VoicesItem, key: any) => {
     reset()
     if (key === 'once' && playerList.has(key)) {
-      playerList.get(key)!.audio.oncanplay = null
+      // 停止并清理之前的音频
+      const oldAudio = playerList.get(key)!.audio
+      oldAudio.pause()
+      oldAudio.src = ''
+      oldAudio.oncanplay = null
+      oldAudio.onerror = null
+      oldAudio.ontimeupdate = null
+      oldAudio.onended = null
+      playerList.delete(key)
     }
     const path = getDownloadUrl(voice.path)
     playerList.set(key, {
@@ -182,10 +190,25 @@ const createPlayer = (btnList: { [name: string]: any }) => {
         infoDate.value = voice.mark
       }
     }
-    playerList.get(key)!.audio.play()
+    try {
+      const playPromise = playerList.get(key)!.audio.play()
+      if (playPromise !== undefined) {
+        playPromise.catch(() => {
+          // 静默处理播放错误，避免影响服务
+          playSetting.loading = false
+          playSetting.error = true
+        })
+      }
+    } catch {
+      // 捕获播放时的同步错误
+      playSetting.loading = false
+      playSetting.error = true
+    }
     playerList.get(key)!.audio.onerror = () => {
       if (CDN && playerList.get(key)!.audio.src.startsWith(CDN)) {
-        playerList.get(key)!.audio.src = `voices/${voice.path}`
+        // 使用编码后的路径
+        const encodedPath = voice.path.split('/').map(segment => encodeURIComponent(segment)).join('/')
+        playerList.get(key)!.audio.src = `voices/${encodedPath}`
         playerList.get(key)!.audio.play()
       } else {
         playSetting.loading = false
@@ -206,19 +229,32 @@ const createPlayer = (btnList: { [name: string]: any }) => {
             num++
           }
         }
-        if (num > 1) {
-          btnList[voice.name].progress = 100
-        } else {
-          btnList[voice.name].progress = currentTime
+        // 安全检查：确保按钮引用存在
+        if (btnList[voice.name]) {
+          if (num > 1) {
+            btnList[voice.name].progress = 100
+          } else {
+            btnList[voice.name].progress = currentTime
+          }
         }
       }
       playerList.get(key)!.audio.onended = () => {
-        btnList[voice.name].progress = 0
+        // 安全检查：确保按钮引用存在
+        if (btnList[voice.name]) {
+          btnList[voice.name].progress = 0
+        }
         playerList.delete(key)
+
+        // 播放完成后，清理状态但不重置 loading（避免阻止后续播放）
+        if (!playSetting.overlap) {
+          playSetting.nowPlay = null
+          playSetting.loading = false
+          playSetting.error = false
+          infoDate.value = null
+        }
+
         if (playSetting.loop > 0) {
           listLoop(voice)
-        } else {
-          reset()
         }
         if (playSetting.autoRandom) {
           randomPlay()
@@ -400,7 +436,9 @@ const createPlayer = (btnList: { [name: string]: any }) => {
   }
 
   const getDownloadUrl = (url: string) => {
-    return process.env.NODE_ENV === 'production' && CDN ? `${CDN}/${url}` : `voices/${url}`
+    // 对路径进行 URL 编码，处理中文字符和特殊字符
+    const encodedUrl = url.split('/').map(segment => encodeURIComponent(segment)).join('/')
+    return process.env.NODE_ENV === 'production' && CDN ? `${CDN}/${encodedUrl}` : `voices/${encodedUrl}`
   }
 
   /**

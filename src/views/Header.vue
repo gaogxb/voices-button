@@ -183,8 +183,10 @@ onMounted(() => {
 
   .logo
     display block
-    width 35px
-    height 35px
+    max-width 80px
+    max-height 35px
+    width auto
+    height auto
     font-size 25px
     line-height 35px
     margin 0 10px
@@ -192,9 +194,10 @@ onMounted(() => {
     user-select none
     animation logo 1s
     animation-delay 0.5s
+    object-fit contain
 
   .title
-    color #eee
+    color #000
     font-size 20px
     margin-right 10px
     user-select none

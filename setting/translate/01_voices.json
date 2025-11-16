@@ -1,17 +1,312 @@
 [
   {
-    "name": "好耶",
-    "path": "好耶.mp3",
-    "date": "2020-11-25",
+    "name": "啊！",
+    "path": "1_沙月鸭科夫声音mod/啊！.mp3",
+    "date": "2025-11-16",
     "translate": {
-      "zh-CN": "好耶",
-      "en-US": "Haoye"
+      "zh-CN": "啊！",
+      "en-US": "啊！"
     },
-    "category": "名言",
-    "mark": {
-      "title": "【Hiiro Record】11.24 Tue.读棉花糖",
-      "time": "59:33~59:34",
-      "url": "https://www.bilibili.com/video/BV1gy4y1q7cC"
-    }
+    "category": "沙月鸭科夫声音mod"
+  },
+  {
+    "name": "啊！！ ！！！！",
+    "path": "1_沙月鸭科夫声音mod/啊！！ ！！！！.mp3",
+    "date": "2025-11-16",
+    "translate": {
+      "zh-CN": "啊！！ ！！！！",
+      "en-US": "啊！！ ！！！！"
+    },
+    "category": "沙月鸭科夫声音mod"
+  },
+  {
+    "name": "啊！！ ！！！！！！！",
+    "path": "1_沙月鸭科夫声音mod/啊！！ ！！！！！！！.mp3",
+    "date": "2025-11-16",
+    "translate": {
+      "zh-CN": "啊！！ ！！！！！！！",
+      "en-US": "啊！！ ！！！！！！！"
+    },
+    "category": "沙月鸭科夫声音mod"
+  },
+  {
+    "name": "啊~",
+    "path": "1_沙月鸭科夫声音mod/啊~.mp3",
+    "date": "2025-11-16",
+    "translate": {
+      "zh-CN": "啊~",
+      "en-US": "啊~"
+    },
+    "category": "沙月鸭科夫声音mod"
+  },
+  {
+    "name": "啊~2",
+    "path": "1_沙月鸭科夫声音mod/啊~2.mp3",
+    "date": "2025-11-16",
+    "translate": {
+      "zh-CN": "啊~2",
+      "en-US": "啊~2"
+    },
+    "category": "沙月鸭科夫声音mod"
+  },
+  {
+    "name": "本频道由大口吸月赞助播出~",
+    "path": "1_沙月鸭科夫声音mod/本频道由大口吸月赞助播出~.mp3",
+    "date": "2025-11-16",
+    "translate": {
+      "zh-CN": "本频道由大口吸月赞助播出~",
+      "en-US": "本频道由大口吸月赞助播出~"
+    },
+    "category": "沙月鸭科夫声音mod"
+  },
+  {
+    "name": "吃东西",
+    "path": "1_沙月鸭科夫声音mod/吃东西.mp3",
+    "date": "2025-11-16",
+    "translate": {
+      "zh-CN": "吃东西",
+      "en-US": "吃东西"
+    },
+    "category": "沙月鸭科夫声音mod"
+  },
+  {
+    "name": "打你的蛋喵",
+    "path": "1_沙月鸭科夫声音mod/打你的蛋喵.mp3",
+    "date": "2025-11-16",
+    "translate": {
+      "zh-CN": "打你的蛋喵",
+      "en-US": "打你的蛋喵"
+    },
+    "category": "沙月鸭科夫声音mod"
+  },
+  {
+    "name": "打碎你的蛋蛋",
+    "path": "1_沙月鸭科夫声音mod/打碎你的蛋蛋.mp3",
+    "date": "2025-11-16",
+    "translate": {
+      "zh-CN": "打碎你的蛋蛋",
+      "en-US": "打碎你的蛋蛋"
+    },
+    "category": "沙月鸭科夫声音mod"
+  },
+  {
+    "name": "咚~",
+    "path": "1_沙月鸭科夫声音mod/咚~.mp3",
+    "date": "2025-11-16",
+    "translate": {
+      "zh-CN": "咚~",
+      "en-US": "咚~"
+    },
+    "category": "沙月鸭科夫声音mod"
+  },
+  {
+    "name": "附近有没有人！",
+    "path": "1_沙月鸭科夫声音mod/附近有没有人！.mp3",
+    "date": "2025-11-16",
+    "translate": {
+      "zh-CN": "附近有没有人！",
+      "en-US": "附近有没有人！"
+    },
+    "category": "沙月鸭科夫声音mod"
+  },
+  {
+    "name": "欢迎回来喵",
+    "path": "1_沙月鸭科夫声音mod/欢迎回来喵.mp3",
+    "date": "2025-11-16",
+    "translate": {
+      "zh-CN": "欢迎回来喵",
+      "en-US": "欢迎回来喵"
+    },
+    "category": "沙月鸭科夫声音mod"
+  },
+  {
+    "name": "救命啊！",
+    "path": "1_沙月鸭科夫声音mod/救命啊！.mp3",
+    "date": "2025-11-16",
+    "translate": {
+      "zh-CN": "救命啊！",
+      "en-US": "救命啊！"
+    },
+    "category": "沙月鸭科夫声音mod"
+  },
+  {
+    "name": "快跑喵",
+    "path": "1_沙月鸭科夫声音mod/快跑喵.mp3",
+    "date": "2025-11-16",
+    "translate": {
+      "zh-CN": "快跑喵",
+      "en-US": "快跑喵"
+    },
+    "category": "沙月鸭科夫声音mod"
+  },
+  {
+    "name": "你别跑！我砍死你！",
+    "path": "1_沙月鸭科夫声音mod/你别跑！我砍死你！.mp3",
+    "date": "2025-11-16",
+    "translate": {
+      "zh-CN": "你别跑！我砍死你！",
+      "en-US": "你别跑！我砍死你！"
+    },
+    "category": "沙月鸭科夫声音mod"
+  },
+  {
+    "name": "你完蛋了！",
+    "path": "1_沙月鸭科夫声音mod/你完蛋了！.mp3",
+    "date": "2025-11-16",
+    "translate": {
+      "zh-CN": "你完蛋了！",
+      "en-US": "你完蛋了！"
+    },
+    "category": "沙月鸭科夫声音mod"
+  },
+  {
+    "name": "欧拉,木大！",
+    "path": "1_沙月鸭科夫声音mod/欧拉,木大！.mp3",
+    "date": "2025-11-16",
+    "translate": {
+      "zh-CN": "欧拉,木大！",
+      "en-US": "欧拉,木大！"
+    },
+    "category": "沙月鸭科夫声音mod"
+  },
+  {
+    "name": "欧尼酱~",
+    "path": "1_沙月鸭科夫声音mod/欧尼酱~.mp3",
+    "date": "2025-11-16",
+    "translate": {
+      "zh-CN": "欧尼酱~",
+      "en-US": "欧尼酱~"
+    },
+    "category": "沙月鸭科夫声音mod"
+  },
+  {
+    "name": "沙月酱你最喜欢谁？tomato~",
+    "path": "1_沙月鸭科夫声音mod/沙月酱你最喜欢谁？tomato~.mp3",
+    "date": "2025-11-16",
+    "translate": {
+      "zh-CN": "沙月酱你最喜欢谁？tomato~",
+      "en-US": "沙月酱你最喜欢谁？tomato~"
+    },
+    "category": "沙月鸭科夫声音mod"
+  },
+  {
+    "name": "汪汪汪！",
+    "path": "1_沙月鸭科夫声音mod/汪汪汪！.mp3",
+    "date": "2025-11-16",
+    "translate": {
+      "zh-CN": "汪汪汪！",
+      "en-US": "汪汪汪！"
+    },
+    "category": "沙月鸭科夫声音mod"
+  },
+  {
+    "name": "要死了！",
+    "path": "1_沙月鸭科夫声音mod/要死了！.mp3",
+    "date": "2025-11-16",
+    "translate": {
+      "zh-CN": "要死了！",
+      "en-US": "要死了！"
+    },
+    "category": "沙月鸭科夫声音mod"
+  },
+  {
+    "name": "吔~快跑快跑",
+    "path": "1_沙月鸭科夫声音mod/吔~快跑快跑.mp3",
+    "date": "2025-11-16",
+    "translate": {
+      "zh-CN": "吔~快跑快跑",
+      "en-US": "吔~快跑快跑"
+    },
+    "category": "沙月鸭科夫声音mod"
+  },
+  {
+    "name": "有人咩？",
+    "path": "1_沙月鸭科夫声音mod/有人咩？.mp3",
+    "date": "2025-11-16",
+    "translate": {
+      "zh-CN": "有人咩？",
+      "en-US": "有人咩？"
+    },
+    "category": "沙月鸭科夫声音mod"
+  },
+  {
+    "name": "杂鱼杂鱼~扎口扎口~",
+    "path": "1_沙月鸭科夫声音mod/杂鱼杂鱼~扎口扎口~.mp3",
+    "date": "2025-11-16",
+    "translate": {
+      "zh-CN": "杂鱼杂鱼~扎口扎口~",
+      "en-US": "杂鱼杂鱼~扎口扎口~"
+    },
+    "category": "沙月鸭科夫声音mod"
+  },
+  {
+    "name": "A~",
+    "path": "1_沙月鸭科夫声音mod/A~.mp3",
+    "date": "2025-11-16",
+    "translate": {
+      "zh-CN": "A~",
+      "en-US": "A~"
+    },
+    "category": "沙月鸭科夫声音mod"
+  },
+  {
+    "name": "biu~",
+    "path": "1_沙月鸭科夫声音mod/biu~.mp3",
+    "date": "2025-11-16",
+    "translate": {
+      "zh-CN": "biu~",
+      "en-US": "biu~"
+    },
+    "category": "沙月鸭科夫声音mod"
+  },
+  {
+    "name": "boom~",
+    "path": "1_沙月鸭科夫声音mod/boom~.mp3",
+    "date": "2025-11-16",
+    "translate": {
+      "zh-CN": "boom~",
+      "en-US": "boom~"
+    },
+    "category": "沙月鸭科夫声音mod"
+  },
+  {
+    "name": "diu~",
+    "path": "1_沙月鸭科夫声音mod/diu~.mp3",
+    "date": "2025-11-16",
+    "translate": {
+      "zh-CN": "diu~",
+      "en-US": "diu~"
+    },
+    "category": "沙月鸭科夫声音mod"
+  },
+  {
+    "name": "nya！",
+    "path": "1_沙月鸭科夫声音mod/nya！.mp3",
+    "date": "2025-11-16",
+    "translate": {
+      "zh-CN": "nya！",
+      "en-US": "nya！"
+    },
+    "category": "沙月鸭科夫声音mod"
+  },
+  {
+    "name": "nya~",
+    "path": "1_沙月鸭科夫声音mod/nya~.mp3",
+    "date": "2025-11-16",
+    "translate": {
+      "zh-CN": "nya~",
+      "en-US": "nya~"
+    },
+    "category": "沙月鸭科夫声音mod"
+  },
+  {
+    "name": "nya~2",
+    "path": "1_沙月鸭科夫声音mod/nya~2.mp3",
+    "date": "2025-11-16",
+    "translate": {
+      "zh-CN": "nya~2",
+      "en-US": "nya~2"
+    },
+    "category": "沙月鸭科夫声音mod"
   }
 ]

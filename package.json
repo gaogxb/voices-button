@@ -4,9 +4,11 @@
   "private": true,
   "author": "",
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "serve": "node scripts/serve-safe.js serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "build:auto": "node scripts/generate-voices.js && vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "generate-voices": "node scripts/generate-voices.js"
   },
   "dependencies": {
     "core-js": "^3.8.3",
