@@ -10,7 +10,7 @@ process.env.VUE_APP_LAST_UPDATE = Date.now()
  */
 module.exports = {
   publicPath: process.env.NODE_ENV === 'production'
-    ? './'
+    ? '/'  // 使用自定义域名时使用根路径
     : '/',
   productionSourceMap: false,
   // 在开发模式下忽略 setting/translate 目录的变化，避免触发 memfs 错误
