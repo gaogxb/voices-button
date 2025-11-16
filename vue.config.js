@@ -9,6 +9,9 @@ process.env.VUE_APP_LAST_UPDATE = Date.now()
  *  @type { Options }
  */
 module.exports = {
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/voices-button/'
+    : '/',
   productionSourceMap: false,
   css: {
     loaderOptions: {
