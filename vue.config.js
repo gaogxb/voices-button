@@ -22,7 +22,11 @@ module.exports = {
       }
     }
   },
-  configureWebpack: () => {
+  configureWebpack: (config) => {
+    // 禁用缓存以确保 setting.json 的更改能够被检测到
+    if (process.env.NODE_ENV === 'development') {
+      config.cache = false
+    }
     return {
       plugins: [
         new Check(),
