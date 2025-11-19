@@ -44,12 +44,12 @@ $active-color = #93a3b3
   "name": {
     "CN": {
       // Header和网站名
-      "title": "语音按钮",
+      "title": "沙月月语音按钮",
       // MediaSession歌手
       "fullName": ""
     },
     "EN": {
-      "title": "Voives Button",
+      "title": "Shayue Voives Button",
       "fullName": ""
     }
   },
@@ -111,7 +111,11 @@ $active-color = #93a3b3
   // MediaSession专辑图片名，请放到public/img文件夹
   "mediaSession": "",
   // 语音CDN地址
-  "CDN": ""
+  "CDN": "",
+  // Google Analytics ID (可选，用于服务器统计播放次数)
+  // 格式: "G-XXXXXXXXXX" 或 "UA-XXXXXXXXX-X"
+  // 获取方式: https://analytics.google.com/
+  "GA_ID": ""
 }
 ```
 
