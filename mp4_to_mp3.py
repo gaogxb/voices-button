@@ -9,6 +9,15 @@ import os
 import sys
 from pathlib import Path
 
+# 设置标准输出编码为 UTF-8，避免 Windows 控制台编码问题
+if sys.platform == 'win32':
+    try:
+        sys.stdout.reconfigure(encoding='utf-8')
+    except AttributeError:
+        # Python < 3.7 不支持 reconfigure
+        import io
+        sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
+
 def find_ffmpeg():
     """
     查找ffmpeg可执行文件的路径
